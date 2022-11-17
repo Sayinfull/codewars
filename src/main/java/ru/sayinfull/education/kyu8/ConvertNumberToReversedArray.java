@@ -1,6 +1,7 @@
 package ru.sayinfull.education.kyu8;
 
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
 public class ConvertNumberToReversedArray {
     public static void main(String[] args) {
@@ -8,6 +9,7 @@ public class ConvertNumberToReversedArray {
     }
 
     public static int[] digitize(long n) {
+
         String s = String.valueOf(n);
 
         int[] array = new int[s.length()];
