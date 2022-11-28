@@ -9,16 +9,16 @@ public class Isograms {
         System.out.println(isIsogram("Hhelo"));
     }
     public static Boolean isIsogram(String str) {
-        return str.length() == str.toLowerCase().chars().distinct().count();
-//        String str1 = str.toLowerCase();
-//        Set<Character> set = new HashSet<>();
-//        StringBuilder sb = new StringBuilder();
-//        for (char c : str1.toCharArray()){
-//            if (!set.contains(c)){
-//                set.add(c);
-//                sb.append(c);
-//            }
-//        }
-//        return sb.toString().equals(str1);
+//        return str.length() == str.toLowerCase().chars().distinct().count();
+        String str1 = str.toLowerCase();
+        Set<Character> set = new HashSet<>();
+        StringBuilder sb = new StringBuilder();
+        for (char c : str1.toCharArray()){
+            if (!set.contains(c)){
+                set.add(c);
+                sb.append(c);
+            }
+        }
+        return sb.toString().contains(str1);
     }
 }
